@@ -33,7 +33,7 @@ class HeaderSection extends StatelessWidget {
                   radius: 56,
                   backgroundColor: const Color(0xFF00695C), // Teal accent
                   child: Text(
-                    'AS', // Initials as placeholder
+                    'DT', // Initials for Dimantha Theekshana
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
@@ -48,7 +48,7 @@ class HeaderSection extends StatelessWidget {
             
             // Full name
             Text(
-              'Alexandra Smith',
+              'Dimantha Theekshana',
               style: Theme.of(context).textTheme.headlineLarge?.copyWith(
                 color: Colors.white,
                 fontSize: 28,
@@ -60,7 +60,7 @@ class HeaderSection extends StatelessWidget {
             
             // Professional title
             Text(
-              'Senior Software Engineer',
+              'Software Engineer Trainee',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 color: Colors.white70,
                 fontSize: 18,
@@ -82,7 +82,7 @@ class HeaderSection extends StatelessWidget {
                 ),
                 const SizedBox(width: 6),
                 Text(
-                  'San Francisco, CA',
+                  'Panadura',
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: Colors.white70,
                     fontSize: 16,

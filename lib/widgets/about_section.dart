@@ -35,9 +35,9 @@ class AboutSection extends StatelessWidget {
               
               // Professional summary
               Text(
-                'Passionate software engineer with 5+ years of experience in developing scalable web and mobile applications. '
-                'Specialized in Flutter, React, and Node.js with a strong focus on user experience and clean code architecture. '
-                'Proven track record of leading cross-functional teams and delivering high-quality products.',
+                'Passionate software engineer trainee with a strong foundation in developing scalable web and mobile applications. '
+                'Specialized in Flutter, React, and Node.js with a focus on learning user experience and clean code architecture. '
+                'Eager to grow and contribute to high-quality products while developing technical skills.',
                 style: Theme.of(context).textTheme.bodyLarge,
                 textAlign: TextAlign.justify,
               ),
@@ -50,9 +50,11 @@ class AboutSection extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color(0xFFF3F4F6),
                   borderRadius: BorderRadius.circular(8),
-                  border: Border.left(
-                    width: 4,
-                    color: const Color(0xFF00695C), // Teal accent
+                  border: const Border(
+                    left: BorderSide(
+                      width: 4,
+                      color: Color(0xFF00695C), // Teal accent
+                    ),
                   ),
                 ),
                 child: Column(
@@ -67,14 +69,14 @@ class AboutSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Senior Software Engineer at TechCorp Inc.',
+                      'Software Engineer Trainee at TechCorp Inc.',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'Leading a team of 6 developers in building next-generation mobile applications',
+                      'Learning and developing skills in building next-generation mobile applications',
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ],

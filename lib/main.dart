@@ -54,7 +54,7 @@ class ProfessionalProfileApp extends StatelessWidget {
         ),
         
         // Card theme for consistent elevation and styling
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 2,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
