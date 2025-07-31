@@ -65,12 +65,26 @@ class SkillsSection extends StatelessWidget {
       width: (MediaQuery.of(context).size.width - 80) / 2, // Responsive width
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-        color: Colors.grey[50],
-        borderRadius: BorderRadius.circular(12),
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color(0xFFFAFBFC),
+            Color(0xFFF0F4F8),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.grey[200]!,
+          color: const Color(0xFFE1E8ED),
           width: 1,
         ),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF3F51B5).withOpacity(0.08),
+            blurRadius: 6,
+            offset: const Offset(0, 2),
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -92,13 +106,13 @@ class SkillsSection extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF00695C).withOpacity(0.1),
+                  color: const Color(0xFF3F51B5).withOpacity(0.1),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
                   skill.category,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: const Color(0xFF00695C),
+                    color: const Color(0xFF3F51B5),
                     fontSize: 10,
                     fontWeight: FontWeight.w600,
                   ),
@@ -127,7 +141,7 @@ class SkillsSection extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
-                      color: const Color(0xFF00695C),
+                      color: const Color(0xFF3F51B5),
                     ),
                   ),
                 ],
@@ -153,7 +167,7 @@ class SkillsSection extends StatelessWidget {
     if (proficiency >= 0.8) {
       return const Color(0xFF4CAF50); // Green for high proficiency
     } else if (proficiency >= 0.6) {
-      return const Color(0xFF00695C); // Teal for medium proficiency
+      return const Color(0xFF3F51B5); // Indigo for medium proficiency
     } else {
       return const Color(0xFFFF9800); // Orange for developing skills
     }

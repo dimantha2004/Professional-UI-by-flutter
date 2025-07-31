@@ -11,12 +11,14 @@ class HeaderSection extends StatelessWidget {
       width: double.infinity,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
           colors: [
-            Color(0xFF1565C0), // Navy blue
-            Color(0xFF1976D2), // Slightly lighter blue
+            Color(0xFF3F51B5), // Indigo primary
+            Color(0xFF5C6BC0), // Lighter indigo
+            Color(0xFF7986CB), // Even lighter indigo
           ],
+          stops: [0.0, 0.5, 1.0],
         ),
       ),
       child: Padding(
@@ -29,15 +31,36 @@ class HeaderSection extends StatelessWidget {
               child: CircleAvatar(
                 radius: 60,
                 backgroundColor: Colors.white,
-                child: CircleAvatar(
-                  radius: 56,
-                  backgroundColor: const Color(0xFF00695C), // Teal accent
-                  child: Text(
-                    'DT', // Initials for Dimantha Theekshana
-                    style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Color(0xFF1A237E), // Dark indigo
+                        Color(0xFF3949AB), // Medium indigo
+                      ],
+                    ),
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF1A237E).withOpacity(0.3),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: const CircleAvatar(
+                    radius: 56,
+                    backgroundColor: Colors.transparent,
+                    child: Text(
+                      'DT', // Initials for Dimantha Theekshana
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        letterSpacing: 1.0,
+                      ),
                     ),
                   ),
                 ),

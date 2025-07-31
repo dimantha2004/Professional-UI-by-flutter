@@ -46,16 +46,30 @@ class AboutSection extends StatelessWidget {
               
               // Current role section
               Container(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFF3F4F6),
-                  borderRadius: BorderRadius.circular(8),
+                  gradient: const LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color(0xFFF8F9FA),
+                      Color(0xFFE8F4FD),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(16),
                   border: const Border(
                     left: BorderSide(
                       width: 4,
-                      color: Color(0xFF00695C), // Teal accent
+                      color: Color(0xFF3F51B5), // Indigo accent
                     ),
                   ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFF3F51B5).withOpacity(0.1),
+                      blurRadius: 8,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,7 +77,7 @@ class AboutSection extends StatelessWidget {
                     Text(
                       'Current Role',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        color: const Color(0xFF00695C),
+                        color: const Color(0xFF3F51B5),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
