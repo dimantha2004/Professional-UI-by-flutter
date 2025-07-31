@@ -69,7 +69,7 @@ class AboutSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Software Engineer Trainee at TechCorp Inc.',
+                      'Software Engineer Trainee at Syigen Pvt(Ltd)',
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         fontWeight: FontWeight.w600,
                       ),

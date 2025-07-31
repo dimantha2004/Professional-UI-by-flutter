@@ -15,20 +15,6 @@ class EducationSection extends StatelessWidget {
       description: 'Specialized in Computer Engineering and Software Development',
       gpa: '3.5/4.0',
     ),
-    Education(
-      degree: 'Advanced Level in Physical Science',
-      institution: 'Panadura Royal College',
-      year: '2021',
-      description: 'Mathematics, Physics, and Chemistry stream',
-      gpa: '3.2/4.0',
-    ),
-    Education(
-      degree: 'Flutter Development Certification',
-      institution: 'Google Developer Training',
-      year: '2024',
-      description: 'Mobile app development and UI/UX design certification',
-      gpa: null,
-    ),
   ];
 
   @override
