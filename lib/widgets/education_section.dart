@@ -9,24 +9,24 @@ class EducationSection extends StatelessWidget {
   // Sample education data - in a real app, this would come from a data source
   static const List<Education> educationList = [
     Education(
-      degree: 'Master of Science in Computer Science',
-      institution: 'Stanford University',
-      year: '2019',
-      description: 'Specialized in Machine Learning and Software Engineering',
-      gpa: '3.8/4.0',
+      degree: 'Higher National Diploma in Computer Engineering',
+      institution: 'Institute of Computer Engineering Technology (ICET)',
+      year: '2024',
+      description: 'Specialized in Computer Engineering and Software Development',
+      gpa: '3.5/4.0',
     ),
     Education(
-      degree: 'Bachelor of Science in Software Engineering',
-      institution: 'University of California, Berkeley',
-      year: '2017',
-      description: 'Summa Cum Laude, Dean\'s List all semesters',
-      gpa: '3.9/4.0',
+      degree: 'Advanced Level in Physical Science',
+      institution: 'Panadura Royal College',
+      year: '2021',
+      description: 'Mathematics, Physics, and Chemistry stream',
+      gpa: '3.2/4.0',
     ),
     Education(
-      degree: 'Google Cloud Professional Developer',
-      institution: 'Google Cloud',
-      year: '2023',
-      description: 'Cloud architecture and application development certification',
+      degree: 'Flutter Development Certification',
+      institution: 'Google Developer Training',
+      year: '2024',
+      description: 'Mobile app development and UI/UX design certification',
       gpa: null,
     ),
   ];
